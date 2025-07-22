@@ -3,7 +3,7 @@ import figlet from "figlet";
 import { promisify } from "util";
 
 const figletAsync = promisify(figlet);
-const sleep = (ms = 1000) => new Promise((resolve) => setTimeout(resolve, ms));
+const sleep = (ms = 500) => new Promise((resolve) => setTimeout(resolve, ms));
 async function welcome() {
   const data = await figletAsync("LUCKY GUESS");
   console.log(chalk.green(data));
