@@ -33,7 +33,6 @@ function checkHighscore(name) {
   return findindex;
 }
 
-console.log(checkHighscore(Diffultity.medium.name));
 async function selectDiffculty() {
   const choice = await select({
     message: "Select Difficulty",
